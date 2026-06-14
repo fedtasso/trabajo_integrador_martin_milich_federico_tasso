@@ -7,7 +7,52 @@ CABECERAS_CSV = ["nombre", "poblacion", "superficie", "continente"]
 
 
 def cargar_paises_desde_csv(nombre_archivo):
-    pass
+    """
+    Lee el archivo CSV y devuelve una lista de diccionarios con los datos de cada país.
+    Valida que el archivo tenga las cabeceras correctas y que los campos numéricos sean válidos.
+    Retorna una lista vacía si el archivo no existe o está vacío.
+    """
+    lista_paises = []
+
+    if not os.path.exists(nombre_archivo):
+        print(f"Aviso: No se encontró '{nombre_archivo}'. Se iniciará con lista vacía.")
+        return lista_paises
+    try:
+        with open(nombre_archivo, encoding="utf-8", newline="") as archivo_csv:
+            lector = csv.DictReader(archivo_csv)
+            #Verificar que las cabeceras sean las correctas
+            if lector.fieldnames is None or list(lector.fieldnames) != CABECERAS_CSV:
+                print(f"Error: El archivo '{nombre_archivo}' no tiene las cabeceras correctas.")
+                print(f"Se esperaban: {CABECERAS_CSV}")
+                return lista_paises
+            numero_fila = 1
+            for fila in lector:
+                numero_fila += 1
+                try:
+                    pais = {
+                        "nombre": fila["nombre"].strip(),
+                        "poblacion": int(fila["poblacion"].strip()),
+                        "superficie": int(fila["superficie"].strip()),
+                        "continente": fila["continente"].strip()
+                    }
+                    #Validar que ningún campo esté vacío
+                    campos_completos = True
+
+                    for valor in pais.values():
+                        if str(valor) == "":
+                            campos_completos = False
+
+                    if not campos_completos:
+                        print(f"Aviso: Fila {numero_fila} con campos vacíos ignorada.")
+                        continue
+
+                    lista_paises.append(pais)
+                except (ValueError, KeyError) as error_fila:
+                    print(f"Aviso: Fila {numero_fila} ignorada por error de formato: {error_fila}")
+    except OSError as error_archivo:
+        print(f"Error al leer el archivo '{nombre_archivo}': {error_archivo}")
+    return lista_paises
+
 
 
 def guardar_paises_en_csv(lista_paises, nombre_archivo):
