@@ -5,8 +5,8 @@ Tecnicatura Universitaria en Programación – UTN (Modalidad a Distancia)
 
 ## Integrantes
 
-Milich Martín
-Tasso Federico
+**Milich Martín**
+**Tasso Federico**
 
 
 ## Descripción
