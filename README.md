@@ -23,11 +23,13 @@ Ver estadísticas: mayor y menor población, promedios y cantidad por continente
 
 ## Estructura del repositorio
 
+```text
 gestion-paises-tpi/
 │
 ├── gestion_paises.py   # Código fuente principal
 ├── paises.csv          # Dataset base con 51 países
 └── README.md           # Este archivo
+```
 
 
 ## Requisitos
