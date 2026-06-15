@@ -1,0 +1,52 @@
+nombre,poblacion,superficie,continente
+Argentina,45376763,2780400,América
+Brasil,213993437,8515767,América
+Chile,19116201,756102,América
+Colombia,51049498,1141748,América
+México,128932753,1964375,América
+Perú,33359418,1285216,América
+Venezuela,28435943,916445,América
+Uruguay,3473727,176215,América
+Paraguay,7356000,406752,América
+Bolivia,12079472,1098581,América
+Ecuador,18001000,283561,América
+Estados Unidos,331000000,9833517,América
+Canadá,38000000,9984670,América
+Cuba,11326616,109884,América
+Alemania,83149300,357022,Europa
+Francia,67391582,551695,Europa
+Italia,60244639,301340,Europa
+España,47351567,505990,Europa
+Reino Unido,67886011,243610,Europa
+Portugal,10196709,92212,Europa
+Países Bajos,17441139,41543,Europa
+Bélgica,11589623,30528,Europa
+Suecia,10353442,450295,Europa
+Noruega,5421241,323802,Europa
+Polonia,37950802,312696,Europa
+Rusia,145934462,17098242,Europa
+China,1402112000,9596960,Asia
+India,1380004385,3287263,Asia
+Japón,125800000,377975,Asia
+Indonesia,273523615,1904569,Asia
+Pakistán,220892340,881913,Asia
+Bangladesh,164689383,147570,Asia
+Filipinas,109581078,300000,Asia
+Vietnam,97338579,331212,Asia
+Turquía,84339067,783562,Asia
+Irán,83992949,1648195,Asia
+Tailandia,69799978,513120,Asia
+Arabia Saudita,34813871,2149690,Asia
+Corea del Sur,51269185,100210,Asia
+Nigeria,206139589,923768,África
+Etiopía,114963588,1104300,África
+Egipto,102334404,1001449,África
+República Democrática del Congo,89561403,2344858,África
+Tanzania,59734218,945087,África
+Kenia,53771296,580367,África
+Sudáfrica,59308690,1219090,África
+Ghana,31072940,238533,África
+Mozambique,32163047,801590,África
+Australia,25499884,7692024,Oceanía
+Nueva Zelanda,5084300,270467,Oceanía
+Papúa Nueva Guinea,8947024,462840,Oceanía
