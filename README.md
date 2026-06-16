@@ -30,9 +30,9 @@ Aplicación de consola desarrollada en Python 3 que permite gestionar un dataset
 ```
 gestion-paises-tpi/
 │
+├── documentacion_tpi.pdf   # Informe académico
 ├── gestion_paises.py       # Código fuente principal
 ├── paises.csv              # Dataset base con 51 países
-├── documentacion_tpi.pdf   # Informe académico
 └── README.md               # Este archivo
 ```
 
